@@ -1,0 +1,130 @@
+
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>﻿
+
+
+		<meta charset="utf-8&quot;utf-8&quot;/">
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width,height=device-height, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<title>自取方法-打不开重开即可</title>
+		<link type="text/css" rel="stylesheet" href="https://chiguala.github.io/css.css">
+        <style>
+            .svvv table{width: 100%;}
+            .svvv table img{width: 100%;}
+        </style>
+  <script>
+    // 利用节流函数来优化滚动事件的触发频率
+    function throttle(fn, interval) {
+      var lastTime = 0;
+      return function() {
+        var currTime = new Date().getTime();
+        if (currTime - lastTime > interval) {
+          fn.apply(this, arguments);
+          lastTime = currTime;
+        }
+      };
+    }
+    window.onload = function() {
+      var imgElements = document.getElementsByTagName('img');
+      // 获取页面高度
+      var windowHeight = window.innerHeight || document.documentElement.clientHeight ||document.body.clientHeight;
+      // 监听滚动事件
+      var lazyLoadHandler = throttle(function() {
+        // 计算已经滚动过的距离
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        for (var i = 0; i < imgElements.length; i++) {
+          var imgElement = imgElements[i];
+          // 检查是否可见
+          if (!imgElement.getAttribute('data-loaded') && imgElement.offsetTop < windowHeight + scrollTop) {
+            // 加载图像
+            imgElement.setAttribute('src', imgElement.getAttribute('data-src'));
+            imgElement.setAttribute('data-loaded', true);
+          }
+        }
+      }, 300);
+      window.addEventListener('scroll', lazyLoadHandler, false);
+      lazyLoadHandler();
+    };
+  </script>  
+
+
+	
+	
+
+<div class="title">
+<img src="http://shp.qpic.cn/collector/582248524/638d4779-fd85-43a7-a9e7-be548b5922d8/0" data-src="1/a1.jpg" data-loaded="true"><br>
+<img src="http://shp.qpic.cn/collector/582248524/67b7454d-2a8c-4749-ae68-249dd4ab8a55/0" data-src="1/a2-1.jpg" data-loaded="true"><br>
+<img src="http://shp.qpic.cn/collector/582248524/1950393c-8621-4265-a3e1-719145299e92/0" data-src="1/b2.jpg" data-loaded="true"><br>
+</div>
+<div class="dialog_con">
+	<div class="title">好东西记得分享给兄弟们</div>
+	<div class="dialog_box_text">
+		<div class="box_con">土豪专属✨
+			<br><a class="aheadr2" href="https://y.gtimg.cn/music/photo_new/T053XD004XLCGI4VrqAi.png" target="_blank">点我跳转</a>
+		</div>
+	</div>
+</div>
+</div> 
+<img src="https://img.tgl.qq.com/cover/20230805/bf9b1fc7ffb6c8551a1683c5d08dcbd4_1691232860.jpg" data-src="1/a2-2.jpg" data-loaded="true"><br>
+<img data-src="1/a3.jpg" src="https://img.tgl.qq.com/cover/20230805/ca47adfaa1bfaeab497a98ddffbf1ccf_1691233839.jpg" data-loaded="true"><br>
+<img data-src="1/dy-b1.jpg" src="https://img.tgl.qq.com/cover/20230805/d5d1be25378cd24af47651356709ac85_1691236294.png" data-loaded="true"><br>
+<img data-src="1/h1.jpg" src="https://img.tgl.qq.com/cover/20230805/d2d5e54aa9499c743d44ffd5d5fa48e4_1691233871.jpg" data-loaded="true"><br>
+<img src="https://img.tgl.qq.com/cover/20230805/1da04840be938e38c324e5139d77ce40_1691236005.jpg" data-src="ma/dy-jingjie.jpg" data-loaded="true"><br>
+<img data-src="1/dy-h3.jpg" src="https://img.tgl.qq.com/cover/20230805/cafda8a7bd995c38eb46a4e309413321_1691233972.jpg" data-loaded="true"><br>
+<img data-src="1/dy-h5.jpg" src="https://img.tgl.qq.com/cover/20230805/8cb2ef1eab3743cc90a930fdf018d214_1691232641.png" data-loaded="true"><br>
+<img data-src="1/h6.jpg" src="https://img.tgl.qq.com/cover/20230805/af427702c49b41fe7a18f74fd470f5e4_1691233992.jpg" data-loaded="true"><br>
+<img data-src="1/dy-i1.jpg" src="https://imgs.aixifan.com/newUpload/73089067_b56ca395c39e4a8fa83c6ae6330031f4.png" data-loaded="true"><br>
+<img data-src="1/dy-i2.jpg" src="https://imgs.aixifan.com/newUpload/73089067_cde758a59b194e2da6469f45a38e57d1.png" data-loaded="true"><br>
+<img data-src="1/i3.jpg" src="https://img.tgl.qq.com/cover/20230805/b5541e522f2f8b5372ad03418b3be10d_1691234038.jpg" data-loaded="true"><br>
+</div>
+		
+		<div class="yuedu">阅读10万+</div>
+		<div class="qunicon">
+		  <div class="qunicon1">
+			<div class="icon1"><img src="https://img.tgl.qq.com/cover/20230805/0a2038dde2a69058bbc4ee7e71f881e8_1691233759.png" data-src="za/icon1.png" data-loaded="true"><span>分享</span></div>
+			<div class="icon1"><img src="https://img.tgl.qq.com/cover/20230805/0dc83bb952f1bc5b2a16f956a0d39013_1691233789.png" data-src="za/icon2.png" data-loaded="true"><span>收藏</span></div>
+		  </div>
+		  <div class="qunicon1">
+			<div class="icon1"><img src="https://img.tgl.qq.com/cover/20230805/5207059f62ed31db7dc723b3b8ec2903_1691233806.jpg" data-src="za/icon3.jpg" data-loaded="true"><span>5765</span></div>
+			<div class="icon1"><img src="https://img.tgl.qq.com/cover/20230805/ad03ce498a1f2b2c6dff4dc5780e5a59_1691233822.jpg" data-src="za/icon4.jpg" data-loaded="true"><span>1789</span></div>
+		  </div>
+		</div>
+		
+	
+		<div class="qunliuyan">
+
+			<div class="liuyantit">
+				<p class="lyo">精选评论</p>
+			</div>
+						<div class="liuyanz">
+				<img class="qleft" src="https://img.tgl.qq.com/cover/20230805/28d35c554ccddc7780712e43990ed86e_1691234066.jpeg" data-src="za/3.jpeg" data-loaded="true">
+				<div class="qcenter"><p class="nichen">猫味萝莉</p><div class="liuyan">快手里的瓜真牛皮，就能直接看了！</div></div>
+				<div class="qright"><img src="https://img.tgl.qq.com/cover/20230805/43210832b159c709269a65b6c8888727_1691234081.png" data-src="za/icon3.png" data-loaded="true"><p>赞：128</p></div>
+			</div>
+						<div class="liuyanz">
+				<img class="qleft" src="https://img.tgl.qq.com/cover/20230805/7523bb5e8d53e20919281f250dfd1871_1691234111.jpeg" data-src="za/17.jpeg" data-loaded="true">
+				<div class="qcenter"><p class="nichen">淡尘轻烟</p><div class="liuyan">几年前样幂的瓜都有，找了好久</div></div>
+				<div class="qright"><img src="https://img.tgl.qq.com/cover/20230805/43210832b159c709269a65b6c8888727_1691234081.png" data-src="za/icon3.png" data-loaded="true"><p>赞：323</p></div>
+			</div>
+						<div class="liuyanz">
+				<img class="qleft" src="https://img.tgl.qq.com/cover/20230805/15ab1e8f386e77a08cd909b04f87b42c_1691234119.jpeg" data-src="za/28.jpeg" data-loaded="true">
+				<div class="qcenter"><p class="nichen">野性_萌</p><div class="liuyan">竟然有抖音百万博主的瓜</div></div>
+				<div class="qright"><img src="https://img.tgl.qq.com/cover/20230805/43210832b159c709269a65b6c8888727_1691234081.png" data-src="za/icon3.png" data-loaded="true"><p>赞：666</p></div>
+			</div>
+						<div class="liuyanz">
+				<img class="qleft" src="https://img.tgl.qq.com/cover/20230805/c6d385f820c3389e0cadb0cf948e7f53_1691234126.jpeg" data-src="za/9.jpeg" data-loaded="true">
+				<div class="qcenter"><p class="nichen">少女の烦躁期</p><div class="liuyan">牛皮</div></div>
+				<div class="qright"><img src="https://img.tgl.qq.com/cover/20230805/43210832b159c709269a65b6c8888727_1691234081.png" data-src="za/icon3.png" data-loaded="true"><p>赞：32</p></div>
+			</div>
+						<div class="liuyanz">
+				<img class="qleft" src="https://img.tgl.qq.com/cover/20230805/97e6301e1c19c3be5dfa7a9e94b3ceb6_1691234136.jpeg" data-src="za/15.jpeg" data-loaded="true">
+				<div class="qcenter"><p class="nichen">岸与海的距离</p><div class="liuyan">真的太感谢了</div></div>
+				<div class="qright"><img src="https://img.tgl.qq.com/cover/20230805/43210832b159c709269a65b6c8888727_1691234081.png" data-src="za/icon3.png" data-loaded="true"><p>赞：65</p></div>
+			</div>
+					</div>
+		
+<div class="title"></div>
+   
+<script charset="UTF-8" id="LA_COLLECT" src="https://chiguala.github.io/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"JynFSvaWHMCARPXV",ck:"JynFSvaWHMCARPXV"})</script>
+	
+</body></html>
