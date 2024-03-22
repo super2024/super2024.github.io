@@ -1,53 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-	<button id="https://1rii0.apvstcaio.com/f/Y7IGUT5jP" onclick="copyText1(this.id)">复制到浏览器打开</button>
-    <script>
+<head>
+<meta charset="UTF-8">
+<title>Copy Text on Button Click</title>
+<script>
+function copyText(elementId) {
+  // 创建一个临时的输入框来保存要复制的文本
+  var input = document.createElement("input");
+  input.value = document.getElementById(elementId).innerHTML;
+  
+  // 将临时输入框添加到页面中
+  document.body.appendChild(input);
+  
+  // 选中临时输入框的文本
+  input.select();
+  
+  // 执行复制操作
+  document.execCommand("copy");
+  
+  // 移除临时输入框
+  document.body.removeChild(input);
+  
+  // 可以添加一些用户反馈，比如弹窗提示复制成功
+  alert("Text copied to clipboard.");
+}
+</script>
+</head>
+<body>
  
-		function handleCopyValue(text) {
-			//浏览器禁用了非安全域的 navigator.clipboard 对象
-			//在线上环境会报错 TypeError: Cannot read properties of undefined (reading 'writeText')
-			if (!navigator.clipboard && window.isSecureContext) {
-			  return navigator.clipboard.writeText(text);
-			} else {
-			  // 判断是否支持拷贝
-			  if (!document.execCommand('copy')) return Promise.reject()
-			  // 创建标签，并隐藏
-			  const textArea = document.createElement('textarea')
-			  textArea.style.position = 'fixed'
-			  textArea.style.top = textArea.style.left = '-100vh'
-			  textArea.style.opacity = '0'
-			  textArea.value = text
-			  document.body.appendChild(textArea)
-			  // 聚焦、复制
-			  textArea.focus()
-			  textArea.select()
-			  return new Promise((resolve, reject) => {
-				// 不知为何，必须写这个三目，不然copy不上
-				document.execCommand('copy') ? resolve() : reject()
-				textArea.remove()
-			  })
-			}
-		}
+<p id="textToCopy">https://1rii0.apvstcaio.com/f/Y7IGUT5jP</p>
+<button onclick="copyText('textToCopy')">点我复制</button>
  
-		/*点击复制 ，val是需要复制的值 */
-		function copyText1(val){
-			 handleCopyValue(val)
-			  .then(() => {
-				alert('复制成功')
-			  })
-			  .catch(() => {
-				alert('自动复制失败，请手动复制')
-			  })
- 
-		}
- 
-    </script>
-  </body>
+</body>
+</html>
