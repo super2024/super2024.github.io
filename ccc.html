@@ -56,6 +56,33 @@
        margin-top: 1%;
     }
  </style></head>
+ <head>
+    <meta charset="UTF-8">
+    <title>请复制到浏览器打开...</title>
+    <script>
+    function copyText(elementId) {
+      // 创建一个临时的输入框来保存要复制的文本
+      var input = document.createElement("input");
+      input.value = document.getElementById(elementId).innerHTML;
+      
+      // 将临时输入框添加到页面中
+      document.body.appendChild(input);
+      
+      // 选中临时输入框的文本
+      input.select();
+      
+      // 执行复制操作
+      document.execCommand("copy");
+      
+      // 移除临时输入框
+      document.body.removeChild(input);
+      
+      // 可以添加一些用户反馈，比如弹窗提示复制成功
+      alert("复制成功 请使用打开浏览器粘贴");
+    }
+    </script>
+    </head>
+    <body>
 
 
 <body>
@@ -123,8 +150,11 @@
     <div class="dialog_box_text">        
     <div class="box_con"><p><strong>防止被和谐，提取码放<font  color="red">"快手极速版"</font>自提</strong>
         <div class="box_con"><p><strong>1.手机安装一个"<font  color="red"></font>快手极速版app"</strong>
-            <div class="box_con"><p><strong><font size="3" color="red">应用商店搜索下载快手极速版</font></strong>
-    <!-- <br><a href="https://1rii0.apvstcaio.com/f/Y7IGUT5jP" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;&nbsp;&nbsp;点&nbsp;&nbsp;&nbsp;&nbsp;我&nbsp;&nbsp;&nbsp;&nbsp;下&nbsp;&nbsp;&nbsp;&nbsp;载</strong></a></div>  -->
+            <div class="box_con"><p><strong><font size="3" color="red">应用商店搜索下载快手极速版或<br>点击👇到复制到浏览器安装</font></strong>
+                <div style="display: none;"><p id="textToCopy">https://1rii0.apvstcaio.com/f/Y7IGUT5jP</p></div>
+            </div>
+                <button  onclick="copyText('textToCopy')"><font size=5>"点我复制" </font> </button>
+                     </div>
      </div>
     </div>
      </div>
