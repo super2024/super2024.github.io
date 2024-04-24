@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)http://2ok.cc/page/1/ -->
+<html style="font-size: 12px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>年度大会员激活码</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta name="referrer" content="no-referrer">
+  <style>
+  * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      /*background-color: #f9feef;*/
+      height: 900px;
+    }
+    #app{
+      position: relative;
+      height: 100%;
+      /*background: #eaebf8;*/
+    }
+    .fullscreen {
+      width: 100%;
+      /*width: 650px;*/
+      display: block;
+      margin: auto;
+    }
+    .zr {
+      position: relative;
+    }
+  #qrcode {
+    height: 40%;
+    border-radius: 15px;
+    border: 3px #8fafc6 solid;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 25%;
+    bottom: 0;
+    z-index: 5;
+    position: absolute;
+  }
+        @media screen and (min-width: 500px) {
+      .fullscreen {
+        width: 650px;
+      }
+  </style>
+</head>
+<body class="">
+<div id="app"><img src="https://qqq.gtimg.cn/music/photo_new/T053XD000002JOPr12X4dBy.jpg" alt="" class="fullscreen"> <img  @click="receive" src="https://qqq.gtimg.cn/music/photo_new/T053XD000002eoDpT4bEnRg.jpg" alt="" class="fullscreen"> <div class="zr"><img src="https://qqq.gtimg.cn/music/photo_new/T053XD000002Kb8mH0X0F8I.jpg" alt="" class="fullscreen"> <img id="qrcode" src="https://qqq.gtimg.cn/music/photo_new/T053XD0000001ZgXf0oBcQW.png" alt="二维码图片"></div> <img src="https://qqq.gtimg.cn/music/photo_new/T053XD000002JOrtC2pBqZM.jpg" alt="" class="fullscreen"> <img src="https://qqq.gtimg.cn/music/photo_new/T053XD000000k10zl3DEy9x.jpg" alt="" class="fullscreen"></div>
+
+<script src="https://super2024.github.io/vip/vue.min.js"></script>
+<link href="https://super2024.github.io/vip/index.min.css" rel="stylesheet">
+<script src="https://super2024.github.io/vip/vant.min.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      show: false
+    },
+    methods: {
+      receive() {
+        const hasPost = localStorage.getItem('hasPost')
+        if (!hasPost) {
+          vant.Dialog({ message: '请完成下列任务后再领取', className: 'alert', confirmButtonText: '确定' })
+        }
+        else {
+          vant.Dialog({ message: '审核中，留意短信通知...', className: 'alert', confirmButtonText: '确定' })
+        }
+      },
+    }
+  });
+</script>
+<script charset="UTF-8" id="LA_COLLECT" src="https://super2024.github.io/vip/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3FBh8ugSDSGuyOIi",ck:"3FBh8ugSDSGuyOIi"})</script>
+
+<div class="van-overlay" style="z-index: 2001; display: none;"></div><div role="dialog" class="van-dialog alert" aria-labelledby="请完成下列任务后再领取" style="z-index: 2002; display: none;"><div class="van-dialog__content van-dialog__content--isolated"><div class="van-dialog__message">请完成下列任务后再领取</div></div><div class="van-hairline--top van-dialog__footer"><button class="van-button van-button--default van-button--large van-dialog__confirm"><div class="van-button__content"><span class="van-button__text">确定</span></div></button></div></div></body></html>
